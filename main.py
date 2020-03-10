@@ -6,8 +6,8 @@ MCP3008 Pin   SPI   ItsybitsyM0
 ------------+-----+----------------
 13 (Clk)      SCK    SCK (SCK)
 12 (Dout)     MISO   MI  (MISO)
-11 (Din)	    MOSI   MO  (MOSI)
-10 (Cs)		    CS     D5  (Any free digital pin)
+11 (Din)      MOSI   MO  (MOSI)
+10 (Cs)       CS     D5  (Any free digital pin)
 
 """
 import busio
