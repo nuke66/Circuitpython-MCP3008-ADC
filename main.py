@@ -21,9 +21,9 @@ spi = busio.SPI(clock=board.SCK, MISO=board.MISO, MOSI=board.MOSI)
 cs = digitalio.DigitalInOut(board.D5) # chip select
 mcp = MCP.MCP3008(spi, cs) 
 
-p0 = AnalogIn(mcp, MCP.P0) # channel0
+p7 = AnalogIn(mcp, MCP.P7) # channel 7
 
 while True:
-    print('Value:   {:05}'.format(p0.value))
-    print('Voltage: {:1.2}V'.format(p0.voltage))
+    print('Value:   {:05}'.format(p7.value))
+    print('Voltage: {:1.2}V'.format(p7.voltage))
     time.sleep(0.1)
